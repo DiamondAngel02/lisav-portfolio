@@ -79,7 +79,8 @@
         const logo = document.querySelector('#logo-mobile')
         const logoWhite = document.querySelector('#logo-mobile-active')
         const mobileNav = document.querySelector('.mobile-nav')
-        const dropdown = document.querySelector('.dropdown')
+        const dropDown = document.querySelector('.dropdown')
+
 
         // Display mobile menu
         const mobileMenu = () => {
@@ -88,7 +89,7 @@
             logo.classList.toggle('logo-active')
             logoWhite.classList.toggle('logoWhite-active')
             mobileNav.classList.toggle('nav-active')
-            dropdown.classList.toggle('drop-active')
+            dropDown.classList.toggle('drop-active')
         }
         menu.addEventListener('click', mobileMenu)
     </script>

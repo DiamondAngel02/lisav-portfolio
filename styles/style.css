@@ -173,6 +173,9 @@ nav {
     margin: 10px 0px;
   }
 
-  .dropdown:hover .dropdown-content, .dropdown.drop-active {
+  .dropdown:hover .dropdown-content{
     display: block;
   }
+.dropdown.drop-active{
+    display: block;
+}
