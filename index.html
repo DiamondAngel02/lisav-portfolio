@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisa's portfolio</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- navigation -->
+    <a href="/index.html">
+            <img id="logo" src="assets/logo.svg" alt="Lisa Vartia developer and designer">
+        </a>
+        <nav>
+        
+
+        <div class="menu">
+            <div class="menu-bar"></div>
+            <ul>
+                <li><a href="index.html">// home</a></li>
+                <li><a href="/pages/about.html">// about</a></li>
+                <li>
+                        <div class="dropdown">// work <img src="/assets/arrowdown.svg" alt="arrow down">
+                            <div class="dropdown-content">
+                                <div class="feature">
+                                    <a href="#">
+                                        <p>// feature</p>
+                                    </a>
+                                </div>
+                                <div class="archive">
+                                    <a href="#">
+                                        <p>// archive</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                <li><a href="#">// resumé</a></li>
+                <li><a href="/pages/contact.html">// contact</a></li>
+            </ul>
+            
+            </div>
+            <div class="mobile-nav">
+                <a href="/index.html">
+                    <img id="logo-mobile" src="assets/logo.svg" alt="Lisa Vartia developer and designer">
+                    <img id="logo-mobile-active" src="assets/logo-white.svg" alt="Lisa Vartia developer and designer">
+                </a>
+        
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+    </nav>
+
+
+   
+     <!-- Lisa javascript for hamburger menu -->
+     <script>
+        //Two variables - taking in the class and id from the html
+        const menu = document.querySelector('#mobile-menu');
+        const links = document.querySelector('.menu')
+        const logo = document.querySelector('#logo-mobile')
+        const logoWhite = document.querySelector('#logo-mobile-active')
+        const mobileNav = document.querySelector('.mobile-nav')
+        const dropdown = document.querySelector('.dropdown')
+
+        // Display mobile menu
+        const mobileMenu = () => {
+            menu.classList.toggle('is-active')
+            links.classList.toggle('active')
+            logo.classList.toggle('logo-active')
+            logoWhite.classList.toggle('logoWhite-active')
+            mobileNav.classList.toggle('nav-active')
+            dropdown.classList.toggle('drop-active')
+        }
+        menu.addEventListener('click', mobileMenu)
+    </script>
+
+</body>
+
+</html>
