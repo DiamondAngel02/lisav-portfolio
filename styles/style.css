@@ -237,7 +237,7 @@ header h2 {
 }
 
 
-header a { 
+header .view { 
     width: 160px;
     height: 42px;
     font-size: 18px;
@@ -252,7 +252,7 @@ header a {
     margin-bottom: 250px;
 }
 
-header button:hover {
+header .view:hover {
     background-color: var(--color-primary);
     color: #ffff;
 }
@@ -287,4 +287,86 @@ iframe {
    width: 100vw;
    height: 80vh;
 }
+}
+
+/* section one */
+
+.section-one {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.container {
+    margin-bottom: 30px;
+}
+
+.bg-box {
+    width: 83px;
+    height: 83px;
+    background-color: var(--color-secondary);
+    border-radius: 9px;
+
+}
+
+path {
+   color: var(--color-bg);
+}
+
+.icon {
+    font-size: 54px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 2px;
+}
+
+
+.section-one h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: 24px;
+  
+}
+
+.underline-blue {
+    width: 140px;
+    height: 10px;
+    background-color: var(--color-text-offset);
+    margin-top: 4px;
+}
+
+.section-one-top {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    gap: 16px;
+    justify-content: center;
+}
+
+.section-one-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-one p{
+    margin: 0 20px 0 20px;
+}
+
+.section-one .p-tabed {
+    margin: 8px 20px 8px 30px;
+    border-color: var(--color-text);        
+    border-left: 2px solid;
+    padding-left: 15px;
+}
+
+.section-one .p-tag{
+    margin: 0 20px 0 20px;
+}
+
+/* section two */
+
+#section-two {
+    height: 500px;
+
 }
