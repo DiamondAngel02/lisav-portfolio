@@ -19,10 +19,13 @@
         rel="stylesheet">
     <!-- stylesheet -->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    
     <script src="https://kit.fontawesome.com/090f7bb59b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div id="top"></div>
     <!-- navigation -->
     <a href="/index.html">
         <img id="logo" src="assets/logo.svg" alt="Lisa Vartia developer and designer">
@@ -78,20 +81,23 @@
     </nav>
 
     <header>
-        <h1>Welcome! My name is Lisa Vartia,
+        <h1>Welcome! My name is Lisa Vartia, <br>
             I am a frontend developer and designer</h1>
-        <h2>I build and design things for the web</h2>
+        <h2>I build and design things <br> for the web</h2>
         <a href="#section-two" class="view">View work</a>
 
-        <div>
+        <div class="code-des">
+            <div>
             <h3>&lt;coder/&gt;</h3>
-            <p>Front end developer that writes clean and responsive code</p>
+            <p>Front end developer that writes clean and <br> responsive code</p>
         </div>
 
         <div>
             <h3>designer</h3>
-            <p>Designing UI/UX and product designs. New experiences for the web and products</p>
+            <p>Designing UI/UX and product designs. New <br>  experiences for the web and products</p>
         </div>
+        </div>
+        
 
         <img src="/assets/home/lisa.png" alt="3d figure at a desk">
         <iframe src='https://my.spline.design/lisa-41f743568fe98fd23eb802662e3b7b84/' frameborder='0' width='100%'
@@ -137,7 +143,7 @@
                 <div class="section-one-right">
                     <h3>Web <br>
                         designer</h3>
-                    <div class="underline-blue"></div>
+                    <div class="underline-blue-two"></div>
                 </div>
 
             </div>
@@ -145,7 +151,8 @@
                 &lt;p&gt; <br>
             </p>
             <p class="p-tabed">
-                Passion and experience in UI and UX design. Interested in motion design, 3D and graphic design. Always with usability, intuitive, responsive and aesthetics in mind. 
+                Passion and experience in UI and UX design. Interested in motion design, 3D and graphic design. Always
+                with usability, intuitive, responsive and aesthetics in mind.
             </p>
             <p class="p-tag">
                 &lt;p/&gt;
@@ -163,7 +170,7 @@
                 <div class="section-one-right">
                     <h3>Creative <br>
                         thinker</h3>
-                    <div class="underline-blue"></div>
+                    <div class="underline-blue-three"></div>
                 </div>
 
             </div>
@@ -171,8 +178,9 @@
                 &lt;p&gt; <br>
             </p>
             <p class="p-tabed">
-                Constant learner of everything creative; 
-from animations, 3D art and illustrations. To music, singing, video, photography. I want to be well versed many fields.
+                Constant learner of everything creative;
+                from animations, 3D art and illustrations. To music, singing, video, photography. I want to be well
+                versed many fields.
             </p>
             <p class="p-tag">
                 &lt;p/&gt;
@@ -183,14 +191,119 @@ from animations, 3D art and illustrations. To music, singing, video, photography
 
     <section id="section-two">
         <h2>Projects at a glance</h2>
+
+        <a href="#">
+            <div class="projects">
+                <div class="content">
+                    <h4>Featured</h4>
+                    <h3>Startup</h3>
+                    <p>A startup project for ready meals</p>
+
+                    <div class="card-bottom">
+                        <div class="program">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>Responsive</p>
+                        </div>
+                        <div class="links">
+                            <a href="#"><i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="project-two">
+                <div class="content">
+                    <h4>Featured</h4>
+                    <h3>GolfAcross</h3>
+                    <p>A research heavy project to find the target audience and create a new website for the GolfAcross
+                        app.</p>
+
+                    <div class="card-bottom">
+                        <div class="program">
+                            <p>HTML5</p>
+                            <p>CSS3</p>
+                            <p>Responsive</p>
+                        </div>
+                        <div class="links">
+                            <a href="#"><i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+       
+        <a href="#">
+            <div class="project-three">
+                <div class="content">
+                    <h4>Featured</h4>
+                    <h3>3D models</h3>
+                    <p>A few models that I have buildt and designed, which I later can learn how to use in my website designs with a js library, like three.js</p>
+
+                    <div class="card-bottom">
+                        <div class="program">
+                            <p>Spline</p>
+                        
+                        </div>
+                        <div class="links">
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/pages/work.html" class="archived">Show more</a>
+       
+
+
     </section>
 
+    <section class="contact">
+        <div>
+            <div class="available">
+                <div class="green-light"></div>
+                <h4>Available for freelance work</h4>
+            </div>
+
+            <h3>Ready to build your next <br>
+                digital experience?</h3>
+            <a href="/pages/contact.html"><i class="fa-solid fa-comments"></i>Get in touch</a>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <a href="#top" class="bottom"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+        
+        <div class="social-media">
+            <hr>
+            <a href="#"><i class="fa-brands fa-github fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-behance fa-2xl"></i></a>
+            <a href="#"><i class="fa-brands fa-codepen fa-2xl"></i></a>
+            <hr>
+        </div>
+        <h4>hello@lisavartia.com</h4>
+        <h5>Built and designed by me, Lisa Vartia <br>
+            &copy; 2022</h5>
+
+    </footer>
 
 
 
-    <!-- Lisa javascript for hamburger menu -->
+
+    <!-- javascript for hamburger menu -->
     <script>
-        //Two variables - taking in the class and id from the html
+        //variables - taking in the class and id from the html
         const menu = document.querySelector('#mobile-menu');
         const links = document.querySelector('.menu')
         const logo = document.querySelector('#logo-mobile')
@@ -209,6 +322,7 @@ from animations, 3D art and illustrations. To music, singing, video, photography
             dropDown.classList.toggle('drop-active')
         }
         menu.addEventListener('click', mobileMenu)
+
     </script>
 
 </body>
