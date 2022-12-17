@@ -130,10 +130,14 @@ iframe {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
+    justify-content: center;
 }
 
 .container {
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bg-box {
@@ -208,6 +212,28 @@ path {
 
 .section-one .p-tag{
     margin: 0 20px 0 20px;
+}
+
+.paragraph {
+    width: 375px;
+}
+
+@media (min-width:768px) {
+    .section-one {
+        display: flex;
+        flex-direction: row;
+        margin-top: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+   .bg-box {
+    width: 75px;
+    height: 75px;
+   }
+   .section-one h3 {
+    font-size: 24px;
+   }
+   
 }
 
 /* section two */

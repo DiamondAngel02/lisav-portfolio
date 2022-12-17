@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: center;
+    padding: 200px 0px 100px;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 46px;
+  font-family: "DM Serif Display", serif;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+header h2 {
+    font-size: 40px;
+    color: var(--color-primary);
+  text-align: center;
+}
+
+
+
