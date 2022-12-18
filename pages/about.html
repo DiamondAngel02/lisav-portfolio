@@ -20,7 +20,7 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="/styles/about.css">
     <link rel="stylesheet" href="/styles/nav.css">
-    
+
     <script src="https://kit.fontawesome.com/090f7bb59b.js" crossorigin="anonymous"></script>
 </head>
 
@@ -38,14 +38,14 @@
 
                 </li>
                 <li><a href="/pages/about.html">// about</a>
-                    <div class="underline"></div>
+                    <div class="underline-active"></div>
                 </li>
                 <li>
                     <div class="dropdown">// work <img class="arrow-down" src="/assets/arrowdown.svg" alt="arrow down">
-                        <div class="underline-active"></div>
+                        <div class="underline"></div>
                         <div class="dropdown-content">
                             <div class="feature">
-                                <a href="#section-two">
+                                <a href="/index.html#section-two">
                                     <p>// feature</p>
                                 </a>
                             </div>
@@ -57,7 +57,8 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="https://drive.google.com/file/d/1sjGD_gujx42sBTisO4tAdXMxP0rqk8mz/view?usp=sharing" target="_blank">// resumé</a>
+                <li><a href="https://drive.google.com/file/d/1sjGD_gujx42sBTisO4tAdXMxP0rqk8mz/view?usp=sharing"
+                        target="_blank">// resumé</a>
                     <div class="underline"></div>
                 </li>
                 <li><a href="/pages/contact.html">// contact</a>
@@ -80,14 +81,85 @@
         </div>
     </nav>
 
+    <header>
+        <div class="h-left">
+            <h1>Hey there!</h1>
+            <p>I love to create and learn. About me?
+                I am a student at Zealand business and technology in Denmark Køge. I love to learn about everything tech and I 
+                like to be in a space filled with beauty. Design
+                is important for the soul and to be able to create it
+                filled with life and motion with code is something
+                I thrive for on a daily basis.
+                
+                I want to learn and build, 
+                aesthetic and user friendly digital experiences </p>
+        </div>
+        <div class="h-right">
+            <div class="profile-img">
+            <img src="/assets/about/lisa-vartia.jpg" alt=""> 
+        
+            <div id="scroll-container">
+<div id="scroll-text">&#10023; Lisa Vartia &#10023; Lisa Vartia &#10023; Lisa Vartia &#10023;</div>    
+</div>
+            </div>
+        </div>
+        
+    </header> 
+    
+    <section class="about">
+         <div class="about-left">
+            <h2>History</h2>
+            <ul>
+                <li>Born in <span class="countries">Vietnam, Hanoi</span>
+                    </li>
+                <li>Grown up in <span class="countries">Sweden, Helsingborg</span>
+                    </li>
+                <li>Based in <span class="countries">Denmark, Copenhagen</span></li>
+            </ul>
+          <p>
+            I am adopted from Vietnam, and grew up in Sweden.
+            I later found love and moved to Denmark. And even so
+            With peaks and valleys I try to see beauty around me
+             </p>    
+        </div>
+        <div class="about-right">
+            <h2>Work</h2>
+            <p>
+                Currently working as a part-time waitress and bartender. Main
+                goals is to keep a high costumers service and hospitality. Always
+                ready to listen and give the best experiences possible. </p>
+        </div>
+    </section>
 
-<!--  -->
+    <section id="tools">
+        <h2>Toolkit, competencies <br> and skills</h2>
+        <p>It's important to be diverse with your skills and know different technologies. I am always on the lookout to continue learning and improving in different fields.
+        </p>
+        <div class="tool-container">
+            <div class="tool">HTML</div>
+            <div class="tool">CSS</div>
+            <div class="tool">React.js</div>
+            <div class="tool">Tailwind</div>
+            <div class="tool">UI</div>
+            <div class="tool">UX</div>
+            <div class="tool">SOME</div>
+            <div class="tool">Figma</div>
+            <div class="tool">Adobe XD</div>
+            <div class="tool">Github</div>
+            <div class="tool">Photoshop</div>
+            <div class="tool">VSCode</div>
+            <div class="tool">Vercel</div>
+        </div>
+    </section>
+   
+
+    <!--  -->
 
     <footer>
         <div>
             <a href="#top" class="bottom"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
-        
+
         <div class="social-media">
             <hr>
             <a href="#"><i class="fa-brands fa-github fa-2xl"></i></a>
@@ -97,15 +169,17 @@
             <a href="#"><i class="fa-brands fa-codepen fa-2xl"></i></a>
             <hr>
         </div>
-        <a href="#"><h4>hello@lisavartia.com</h4></a> 
+        <a href="#">
+            <h4>hello@lisavartia.com</h4>
+        </a>
         <h5>Built and designed by me, Lisa Vartia <br>
             &copy; 2022</h5>
-    
+
     </footer>
-    
-    
-    
-    
+
+
+
+
     <!-- javascript for hamburger menu -->
     <script>
         //variables - taking in the class and id from the html
@@ -115,8 +189,8 @@
         const logoWhite = document.querySelector('#logo-mobile-active')
         const mobileNav = document.querySelector('.mobile-nav')
         const dropDown = document.querySelector('.dropdown')
-    
-    
+
+
         // Display mobile menu
         const mobileMenu = () => {
             menu.classList.toggle('is-active')
@@ -127,9 +201,9 @@
             dropDown.classList.toggle('drop-active')
         }
         menu.addEventListener('click', mobileMenu)
-    
+
     </script>
-    
-    </body>
-    
-    </html>
+
+</body>
+
+</html>
