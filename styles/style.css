@@ -1,4 +1,5 @@
-
+  
+  
   /* header */
 header {
     margin: 20px;
@@ -47,6 +48,8 @@ header .view {
     justify-content: center;
     align-items: center;
     margin-bottom: 150px;
+    position: relative;
+    z-index: 3;
 }
 
 header .view:hover {
@@ -63,6 +66,7 @@ header h3 {
 header p {
     margin-bottom: 20px;
     text-align: center;
+    max-width: 370px;
 }
 
 header img {
@@ -71,9 +75,11 @@ header img {
     margin-top: 20px;
 }
 
-iframe {
+.spline {
    display: none;
  }
+
+ 
 
 
 @media (min-width:768px) {
@@ -110,17 +116,34 @@ iframe {
       width: 430px;  
     }
     header h2 {
-        font-size: 40px;
+        font-size: 60px;
     }
 
     header img {
         display: none;
     }
 
+    .spline {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        margin-top: -150px;
+        flex-direction: column;
+    }
+
     iframe {
-   width: 100vw;
-   height: 80vh;
+    display: block;
+    width: 100%;
+    height: 100%;
+   
 }
+.spline p {
+position: absolute;
+margin-top: 50px;
+margin-left: 10px;
+font-weight: 600;
+}
+
     
 }
 

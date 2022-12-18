@@ -17,7 +17,8 @@
   body {
     background-color: var(--color-bg);
     background-image: url(/assets/background.png);
-    background-repeat: repeat-y;
+    background-repeat: repeat;
+    background-size: contain;
   }
   
   li {
@@ -282,13 +283,28 @@
         .dropdown-content {
             min-width: 35px;
             font-size: 14px;
-            margin: 10px 0px;
+            margin: 10px -10px;
+            padding: 5px 5px;
           }
+        .dropdown-content p {
+            text-align: center;
+        }
         
 } 
 
-@media (min-width:1024) {
-    /*  */
+@media (min-width:1024px) {
+    .menu li {
+        margin-right: 20px;
+    }
+    .underline{
+        width: 75px;
+        height: 10px;
+    }
+
+    .underline-active{
+        width: 75px;
+        height: 10px;
+    }
 }
 
 
