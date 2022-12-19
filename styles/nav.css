@@ -106,7 +106,7 @@
       border-radius: 32px;
       background-color: var(--color-bg-offset);
       align-items: center;
-      z-index: 4;
+      z-index: 5;
       bottom: 10px;
     }
   
@@ -136,7 +136,7 @@
       display: block;
     width: 100vw;
     transition: all 0.75s ease;
-    z-index: 2;
+    z-index: 4;
     height: 100vh;
     position: fixed;
     margin: 40px auto; 
@@ -184,7 +184,7 @@
   .dropdown-content {
       display: none;
       position: relative;
-      z-index: 2;
+      z-index: 4;
       min-width: 160px;
       font-size: 20px;
       margin: 10px 0px;
@@ -201,15 +201,12 @@
     .underline-active {
       width: 125px;
       height: 12px;
-      z-index: 2;
+      z-index: 4;
       background-color: var(--color-primary);  
     }
   
     .underline {
-      width: 125px;
-      height: 12px;  
-      z-index: 2;
-      background-color: var(--color-bg-offset);  
+      display: none;
     }
   
   li:hover .underline{
@@ -251,8 +248,11 @@
         }
 
         .underline{
+            display: block;
             width: 85px;
-            height: 10px;
+             height: 10px;  
+             z-index: 4;
+             background-color: var(--color-bg-offset);  
         }
 
         .underline-active{
@@ -363,6 +363,10 @@ footer h4:hover {
 
 .social-media path {
     color: var(--color-text);
+}
+
+.social-media path:hover {
+    color: var(--color-text-offset-op);
 }
 
 footer h5 {

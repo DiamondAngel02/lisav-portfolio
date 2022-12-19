@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/styles/startup.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+
+    <script src="https://kit.fontawesome.com/090f7bb59b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div id="top"></div>
+    <!-- navigation -->
+    <a href="/index.html">
+        <img id="logo" src="/assets/logo.svg" alt="Lisa Vartia developer and designer">
+    </a>
+    <nav>
+        <div class="menu">
+            <div class="menu-bar"></div>
+            <ul>
+                <li><a href="/index.html">// home <div class="underline"></div></a>
+
+                </li>
+                <li><a href="/pages/about.html">// about</a>
+                    <div class="underline"></div>
+                </li>
+                <li>
+                    <div class="dropdown">// work <img class="arrow-down" src="/assets/arrowdown.svg" alt="arrow down">
+                        <div class="underline"></div>
+                        <div class="dropdown-content">
+                            <div class="feature">
+                                <a href="/index.html#section-two">
+                                    <p>// feature</p>
+                                </a>
+                            </div>
+                            <div class="archive">
+                                <a href="/pages/work.html">
+                                    <p>// archive</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="https://drive.google.com/file/d/1sjGD_gujx42sBTisO4tAdXMxP0rqk8mz/view?usp=sharing"
+                        target="_blank">// resumé</a>
+                    <div class="underline"></div>
+                </li>
+                <li><a href="/pages/contact.html">// contact</a>
+                    <div class="underline-active"></div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="mobile-nav">
+            <a href="/index.html">
+                <img id="logo-mobile" src="/assets/logo.svg" alt="Lisa Vartia developer and designer">
+                <img id="logo-mobile-active" src="/assets/logo-white.svg" alt="Lisa Vartia developer and designer">
+            </a>
+
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+
+<footer>
+    <div>
+        <a href="#top" class="bottom"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    
+    <div class="social-media">
+        <hr>
+        <a href="#"><i class="fa-brands fa-github fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-behance fa-2xl"></i></a>
+        <a href="#"><i class="fa-brands fa-codepen fa-2xl"></i></a>
+        <hr>
+    </div>
+    <a href="#"><h4>hello@lisavartia.com</h4></a> 
+    <h5>Built and designed by me, Lisa Vartia <br>
+        &copy; 2022</h5>
+
+</footer>
+
+
+
+<!-- -- -->
+
+<!-- javascript for hamburger menu -->
+<script>
+    
+
+
+    //variables - taking in the class and id from the html
+    const menu = document.querySelector('#mobile-menu');
+    const links = document.querySelector('.menu')
+    const logo = document.querySelector('#logo-mobile')
+    const logoWhite = document.querySelector('#logo-mobile-active')
+    const mobileNav = document.querySelector('.mobile-nav')
+    const dropDown = document.querySelector('.dropdown')
+
+
+    // Display mobile menu
+    const mobileMenu = () => {
+        menu.classList.toggle('is-active')
+        links.classList.toggle('active')
+        logo.classList.toggle('logo-active')
+        logoWhite.classList.toggle('logoWhite-active')
+        mobileNav.classList.toggle('nav-active')
+        dropDown.classList.toggle('drop-active')
+    }
+    menu.addEventListener('click', mobileMenu)
+
+</script>
+
+</body>
+
+</html>
