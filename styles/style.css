@@ -14,6 +14,7 @@ header {
 
 }
 
+/* places the order of the text */
 .hero-top :nth-child(1) { order: 2; }
 .hero-top :nth-child(2) { order: 1; }
 .hero-top :nth-child(3) { order: 3; }
@@ -100,6 +101,7 @@ header img {
  }
 
  
+ /* responsiveness from 768px and 1024px */
 
 
 @media (min-width:768px) {
@@ -171,6 +173,7 @@ header img {
 
     
 }
+/* end header */
 
 /* section one */
 
@@ -284,6 +287,18 @@ path {
    
 }
 
+@media (min-width:1024px) {
+    .section-one {
+        width: 100%;
+        gap: 10px;
+    }
+    .paragraph {
+        width: 320px;
+    }
+}
+
+/* section one end */
+
 /* section two */
 
 #section-two {
@@ -296,7 +311,7 @@ path {
 
 #section-two h2 {
   font-family: "DM Serif Display", serif;
-    font-size: 38px;
+    font-size: 37px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -449,6 +464,18 @@ path {
 .archived:hover {
     background-color: var(--color-primary);
     color: #ffff;
+}
+
+@media (min-width:768px) {
+    .project-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 40px;
+        justify-content:center;
+        gap: 4px;
+        width: 100%;
+    }
 }
 
 

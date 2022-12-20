@@ -1,0 +1,161 @@
+header {
+  margin: 20px;
+  padding: 50px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  font-size: 40px;
+  display: inline;
+  text-align: center;
+}
+
+header p {
+  text-align: center;
+  margin: 10px;
+  max-width: 320px;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  max-width: 345px;
+}
+
+.pre-title {
+  font-size: 24px;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+main {
+  margin: 20px;
+}
+
+main p {
+  margin: 20px;
+}
+
+h2 {
+  font-family: "DM Serif Display", serif;
+  font-size: 37px;
+  margin-top: 30px;
+}
+
+main li {
+  list-style: circle;
+  margin-left: 15px;
+}
+
+/* next project button */
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.next {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.next p {
+  font-size: 22px;
+  font-family: "DM Serif Display", serif;
+}
+
+.next a:hover {
+  color: var(--color-text-offset);
+}
+
+/* responsiveness */
+@media (min-width: 768px) {
+  header {
+    margin: 40px;
+  }
+  header .images {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px;
+    align-items: center;
+  }
+  .images p {
+    font-size: 22px;
+  }
+  main {
+    margin: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  header .images {
+    gap: 20px;
+  }
+
+  header img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    max-width: 60%;
+  }
+  header p {
+    text-align: center;
+    margin: 10px;
+    max-width: 35%;
+  }
+  main {
+    max-width: 940px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+
+
+
+.spline-work iframe {
+    display: none;
+}
+
+@media (min-width:1024px) {
+    .spline-work img {
+    display: none;
+}
+.spline-work {
+    width: 900px;
+    height: 2800px;
+  }
+  .spline-work iframe {
+    display: inline;
+}
+
+.lisa {
+    width: 800px;
+    height: 900px;
+  }
+  
+  .coffee-mugs {
+    width: 500px;
+    height: 200px;
+  }
+  
+  .sushi {
+    width: 900px;
+    height: 800px;
+  }
+  
+  .light {
+      width: 900px;
+      height: 800px;
+  }
+}
