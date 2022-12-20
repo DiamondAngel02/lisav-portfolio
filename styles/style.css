@@ -1,4 +1,4 @@
-  
+
   
   /* header */
 header {
@@ -7,7 +7,32 @@ header {
     flex-direction: column;
 }
 
+.hero-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.hero-top :nth-child(1) { order: 2; }
+.hero-top :nth-child(2) { order: 1; }
+.hero-top :nth-child(3) { order: 3; }
+.hero-top :nth-child(4) { order: 4; }
+    
+
 header h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 40px;
+    color: var(--color-text);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 br {
+    display: none;
+}
+
+header .pre-title a{
     font-weight: 700;
     font-size: 22px;
     color: var(--color-primary);
@@ -17,23 +42,17 @@ header h1 {
     display: flex;
     margin: auto;
     margin-top: 80px;
+    
 }
 
-header h1:hover {
+header .pre-title a:hover {
     color: var(--color-primary-offset);
 }
 
-header h2 {
-    font-family: "DM Serif Display", serif;
-    font-size: 40px;
-    color: var(--color-text);
-    text-align: center;
+header .hero-content {
     margin-bottom: 20px;
 }
 
-header h2 br {
-    display: none;
-}
 
 header .view { 
     width: 160px;
@@ -57,16 +76,17 @@ header .view:hover {
     color: #ffff;
 }
 
-header h3 {
+header .code-des h2 {
     font-size: 37px;
     font-weight: 600;
     text-align: center;
 }
 
-header p {
+header .code-des p{
     margin-bottom: 20px;
     text-align: center;
     max-width: 370px;
+    font-size: 20px;
 }
 
 header img {
@@ -83,15 +103,15 @@ header img {
 
 
 @media (min-width:768px) {
-    header h1 {
+    header .pre-title {
         font-size: 24px;
     }
 
-    header h2 br {
+    header h1 br {
         display: block;
     }
 
-    header h2 {
+    header h1 {
         font-size: 46px;
     }
     
@@ -100,6 +120,7 @@ header img {
         flex-direction: row;
         justify-content: center;
         gap: 20px;
+        width: 100%;
     }
 
     header img {
@@ -111,18 +132,22 @@ header img {
 }
 
 @media (min-width:1024px) {
-    header h1 {
-      font-size: 24px;
-      width: 430px;  
-    }
     header h2 {
+      font-size: 24px;
+      max-width: 430px;  
+      display: flex;
+      text-align: center;
+      justify-content: center;
+    }
+    header h1 {
         font-size: 60px;
     }
 
-    header img {
+    header img, .hero-content{
         display: none;
     }
 
+    
     .spline {
         width: 500px;
         height: 500px;
@@ -137,11 +162,11 @@ header img {
     height: 100%;
    
 }
-.spline p {
-position: absolute;
-margin-top: 50px;
-margin-left: 10px;
-font-weight: 600;
+    .spline p {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: 600;
 }
 
     
