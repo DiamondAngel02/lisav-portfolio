@@ -90,7 +90,7 @@
                 But if you have any other requests, projects or questions feel free to reach out with the form below.
             </p>
 
-            <form name="contact" method="post">
+            <form onsubmit="sendEmail(); reset(); return false" name="contact" method="post">
 
                 <input placeholder="Your name (required)" type="text" id="name" name="name" required><br>
 
@@ -100,7 +100,7 @@
 
                 <textarea row="6" placeholder="Write your message" type="text" id="message"
                     name="message"></textarea><br>
-                <input type="submit" value="Send">
+                <button type="submit">Send</button>
             </form>
 
 
@@ -111,8 +111,8 @@
 
             <div class="contact-me">
                 <h2>Email me at</h2>
-                <a href="mailto:hello@lisavartia.com">
-                    <p>hello@lisavartia.com</p>
+                <a href="mailto:lisa.vartia@gmail.com">
+                    <p>lisa.vartia@gmail.com</p>
                 </a>
 
                 <h2>Give me a follow</h2>
@@ -156,9 +156,9 @@
         <a href="https://codepen.io/diamondangel02"><i class="fa-brands fa-codepen fa-2xl"></i></a>
         <hr>
     </div>
-    <a href="mailto:hello@lisavartia.com"> 
+    <a href="mailto:lisa.vartia@gmail.com"> 
         <!-- opens the default mail and puts the resever as the email above -->
-        <p>hello@lisavartia.com</p>
+        <p>lisa.vartia@gmail.com</p>
     </a>
     <p>Built and designed by me, Lisa Vartia <br>
         &copy; 2022</p>
@@ -167,12 +167,30 @@
 
 
 
-    <!-- -- -->
+   
+<!--  form js-- -->   
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail(){
+        Email.send({
+            SecureToken: "4064edc6-64a3-47da-acee-f9da20392488",
 
+            To : 'lisa.vartia@gmail.com',
+            From : document.getElementById("email").value,
+            Subject : "Contacted from portfolio form",
+            Body : "Name: " + document.getElementById("name").value 
+            + "<br> Email: " + document.getElementById("email").value 
+            + "<br> Subject: " + document.getElementById("subject").value 
+            + "<br> Message: " + document.getElementById("message").value 
+}).then(
+  message => alert("Succees")
+);
+    }
+</script>
     <!-- javascript for hamburger menu -->
     <script>
 
-
+   
 
         //variables - taking in the class and id from the html
         const menu = document.querySelector('#mobile-menu');

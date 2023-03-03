@@ -39,6 +39,21 @@ header h2 {
   background-color: var(--color-text-offset-op);
 }
 
+.upcoming {
+  background-color: rgba(23, 44, 102, 0.3);
+
+}
+
+.upcoming .content h3 {
+  color: var(--color-text);
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "DM Serif Display", serif;
+  padding-bottom: 20px;
+  text-align: center;
+  margin-top: 130px;
+}
+
 .content {
   position: absolute;
   z-index: 1;
@@ -101,3 +116,23 @@ header h2 {
   color: var(--color-secondary);
 }
 
+.featured {
+  width: 160px;
+  height: 42px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--color-bg-offset);
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.featured:hover {
+  background-color: var(--color-primary);
+  color: #ffff;
+}

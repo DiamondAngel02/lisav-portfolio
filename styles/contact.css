@@ -58,6 +58,7 @@ input {
   padding: 5px;
   border-radius: 5px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 input::placeholder {
   color: var(--color-text-offset);
@@ -72,13 +73,15 @@ textarea {
   background-color: var(--color-bg);
   padding: 5px;
   border-radius: 5px;
+  cursor: pointer;
+
 }
 
 textarea::placeholder {
     color: var(--color-text-offset);
   }
 
-input[type="submit"] {
+button[type="submit"] {
   width: 160px;
   height: 42px;
   font-size: 18px;
@@ -93,9 +96,11 @@ input[type="submit"] {
   position: relative;
   z-index: 3;
   padding-bottom: 0px;
+  cursor: pointer;
+
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
   background-color: var(--color-primary);
   color: var(--color-bg);
 }
@@ -189,7 +194,7 @@ align-items: center;
       width: 300px;
     }
 
-    input[type="submit"] {
+    button[type="submit"] {
      margin-left: 0;
     }
     .coffee {
