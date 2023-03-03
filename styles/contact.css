@@ -137,8 +137,8 @@ input:focus {
     border: 2px solid var(--color-text);
     padding: 20px;
     top: 15%;
-    visibility: hidden;
   }
+
 
   button[type=button] {
     position: absolute;
