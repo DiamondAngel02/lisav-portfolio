@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work</title>
+    <title>Køge Handel</title>
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
@@ -19,13 +19,16 @@
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
         rel="stylesheet">
     <!-- stylesheet -->
-    <link rel="stylesheet" href="/styles/work.css">
+    <link rel="stylesheet" href="/styles/projects.css">
     <link rel="stylesheet" href="/styles/nav.css">
 
     <script src="https://kit.fontawesome.com/090f7bb59b.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+
+
     <div id="top"></div>
     <!-- navigation -->
     <a href="/index.html">
@@ -83,30 +86,42 @@
     </nav>
 
     <header>
-        <h1>Archive</h1>
-        <h2>Projects</h2>
+        <p class="pre-title">Featured project</p>
+        <h1>Køge Handel - Web App</h1>
+        <p>Role: Design, Front-End Dev, HTML, CSS, JS (vanilla and alpine.js) <br>
+            Year: 2022
+            Breakpoints: between 320px-425px
+        </p>
+        <div>
+            <a href="https://koege-handel.vercel.app/">LIVE</a>
+            <a href="https://github.com/lisavartia02/koege-handel">REPO</a>
+        </div>
+        <h2>Project pictures</h2>
+        <div class="images">
+            <img src="https://res.cloudinary.com/ddqar8r8f/image/upload/v1677867664/K%C3%B8ge%20handel/Screenshot_2023-03-03_at_19.17.36_dc8hjz.png"
+                alt="small style guide">
+            <p>Style guide for the colours, text and navigation</p>
 
-        <div class="project-container">
-            <div class="projects">
-                <div class="content">
-                    <p class="archived">Archived</p>
-                    <h3>Startup</h3>
-                    <p>A startup project for ready meals. With custom product design and illustrations. With more focus
-                        on a social media presens</p>
+            <div class="video">
+                <div class="figma-1">
+                    <video controls autoplay class="figma-1b">
+                        <source
+                            src="https://res.cloudinary.com/ddqar8r8f/video/upload/v1677869543/K%C3%B8ge%20handel/figma-koege_qvmjv7.mp4"
+                            type="video/mp4" alt="Video of Figma with the whole app">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Figma of the whole web application</p>
 
-                    <div class="card-bottom">
-                        <div class="program">
-                            <p>HTML5</p>
-                            <p>CSS3</p>
+                </div>
 
-                        </div>
-                        <div class="links">
-                            <a href="https://github.com/lisavartia02/startup-freshness"><i
-                                    class="fa-brands fa-github"></i>
-                                <a href="https://startup-freshness.vercel.app/"><i
-                                        class="fa-solid fa-up-right-from-square"></i></a>
-                        </div>
-                    </div>
+                <div class="figma-2">
+                    <video controls autoplay class="figma-2b">
+                        <source
+                            src="https://res.cloudinary.com/ddqar8r8f/video/upload/v1677869596/K%C3%B8ge%20handel/prototype-koege_kvghkh.mp4"
+                            type="video/mp4" alt="Video of Figma with the prototye of app">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Figma prototype</p>
                 </div>
             </div>
 
@@ -115,8 +130,47 @@
 
     </header>
 
+    <main>
+        <h2>Meaning of project</h2>
+        <p>This project was about UX and research how to get a higher customer flow. It was more focus on research and
+            tests. So there were a lot of interviews and reviewing. <br><br>
 
-    <!-- ---- -->
+            We came to the conclusion that there is a market for a web app and that there were a lot of people that need
+            more help with parking in the areas. We made it so there would be a QR code on the parking lot that would go
+            directly to the specific one as well as all of the rules. There was also:
+        <ul>
+            <li>All the parking lots and their rules in the city</li>
+            <li>Routes for the nearest stores</li>
+            <li>All of the stores in the city that's members of Køge Handel</li>
+            <li>Sales in the cities stores</li>
+            <li>As well as a small about us</li>
+        </ul>
+        </p>
+        <h2>My role</h2>
+        <p>
+        <ul>
+            <li>Took part of the interview and research process</li>
+            <li>Designed mockups for the app</li>
+            <li>Sitemap</li>
+            <li>Main coder, put all of the code together</li>
+            <li>Coded the nav, index.html and all the parking lots. Used vanilla javascript and the alpine.js framework.
+                Made for the screen size of mobiles. (320px - 425px)
+            </li>
+            <li>Usability test of the finished website</li>
+        </ul>
+        </p>
+
+    </main>
+
+    <!-- next project button -->
+    <div class="button">
+        <div class="next">
+            <p class="next-p">Next project:</p>
+            <a href="/pages/work/models.html">3D models <i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+    </div>
+
 
     <!-- footer with social media and emaill, all links working -->
     <footer>
@@ -144,10 +198,13 @@
     </footer>
 
 
-
+    <!-- -- -->
 
     <!-- javascript for hamburger menu -->
     <script>
+
+
+
         //variables - taking in the class and id from the html
         const menu = document.querySelector('#mobile-menu');
         const links = document.querySelector('.menu')

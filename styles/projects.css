@@ -72,6 +72,10 @@ main li {
   color: var(--color-text-offset);
 }
 
+video {
+  width: 320px;
+}
+
 /* responsiveness */
 @media (min-width: 768px) {
   header {
@@ -86,12 +90,25 @@ main li {
     flex-wrap: wrap;
     margin: 40px;
     align-items: center;
+    justify-content: center;
   }
   .images p {
-    font-size: 22px;
+    font-size: 36px;
   }
   main {
     margin: 40px;
+  }
+  .figma-1b {
+    width: 760px;
+  }
+  .figma-2b {
+    width: 500px;
+    margin-top: 30px;
+  }
+  .video .figma-1, .video .figma-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 }
 
@@ -104,7 +121,7 @@ main li {
     width: 100%;
     height: auto;
     margin: 10px 0;
-    max-width: 60%;
+    max-width: 30%;
   }
   header p {
     text-align: center;
@@ -118,6 +135,16 @@ main li {
     justify-content: center;
     align-items: center;
     margin: auto;
+  }
+ 
+  .video .figma-1, .video .figma-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .video .figma-2 {
+    gap: 50px;
   }
 }
 
