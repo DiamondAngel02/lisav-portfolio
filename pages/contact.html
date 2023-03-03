@@ -84,11 +84,11 @@
     </nav>
 
     <header>
-        <!-- <div class="popup" id="popup">
+        <div class="popup" id="popup">
             <h2>Thank you!</h2>
             <p>Your message har been successfully been sent! Thanks for reaching out. I will be replying shortly.</p>
             <button type="button" onclick="closePopup()">OK</button>
-        </div> -->
+        </div>
 
         <div class="box">
             <h1>Contact me!</h1>
@@ -182,22 +182,22 @@
         function sendEmail() {
             Email.send({
                 SecureToken: "508ac840-2faa-4619-9db8-ef886afcc0b1",
-
+                
                 To: 'lisa.vartia@gmail.com',
-                From: document.getElementById("email").value,
+                From: "lisa.vartia@icloud.com",
                 Subject: "Contacted from portfolio form",
                 Body: "Name: " + document.getElementById("name").value
                     + "<br> Email: " + document.getElementById("email").value
                     + "<br> Subject: " + document.getElementById("subject").value
                     + "<br> Message: " + document.getElementById("message").value
             })
-            // .then(
-            //     message => alert("succsess")
-            // );
+            .then(
+                message => openPopup()
+            );
         }
     </script>
 
-    <!-- <script>
+    <script>
        function openPopup() {
   document.getElementById("popup").style.display = "block";
 }
@@ -207,7 +207,7 @@
 }
 
 
-    </script> -->
+    </script>
     <!-- javascript for hamburger menu -->
     <script>
 
