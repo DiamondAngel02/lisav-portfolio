@@ -96,17 +96,18 @@
                 But if you have any other requests, projects or questions feel free to reach out with the form below.
             </p>
 
-            <form onsubmit="sendEmail(); reset(); return false" name="contact" method="post">
+            <form name="contact" action="https://formspree.io/f/xknabplp" method="post" id="form">
 
-                <input placeholder="Your name (required)" type="text" id="name" name="name" ><br>
+                <input placeholder="Your name (required)" type="text" id="name" name="name" required><br>
 
-                <input placeholder="Email address (required)" type="email" id="email" name="email" ><br>
+                <input placeholder="Email address (required)" type="email" id="email" name="email" required><br>
 
                 <input placeholder="Subject" type="text" id="subject" name="subject"> <br>
 
                 <textarea row="6" placeholder="Write your message" type="text" id="message"
                     name="message"></textarea><br>
-                <button type="submit">Send</button>
+                <button type="submit" id="form-btn">Send</button>
+                <p id="my-form-status"></p>
 
             </form>
 
@@ -177,27 +178,38 @@
 
 
     <!--  form js-- -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                SecureToken: "508ac840-2faa-4619-9db8-ef886afcc0b1",
-                
-                To: 'lisa.vartia@gmail.com',
-                From: "lisa.vartia@icloud.com",
-                Subject: "Contacted from portfolio form",
-                Body: "Name: " + document.getElementById("name").value
-                    + "<br> Email: " + document.getElementById("email").value
-                    + "<br> Subject: " + document.getElementById("subject").value
-                    + "<br> Message: " + document.getElementById("message").value
-            })
-            .then(
-                message => openPopup()
-            );
+<script>
+    var form = document.getElementById("form");
+    async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("my-form-status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+        'Accept': 'application/json'
+    }
+    }).then(response => {
+      if (response.ok) {
+        openPopup();
+        form.reset()
+      } else {
+        response.json().then(data => {
+        if (Object.hasOwn(data, 'errors')) {
+          status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+        } else {
+          status.innerHTML = "Oops! There was a problem submitting your form"
         }
-    </script>
+      })
+    }
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+    });
+    }
+    form.addEventListener("submit", handleSubmit)
 
-    <script>
+  
        function openPopup() {
   document.getElementById("popup").style.display = "block";
 }
